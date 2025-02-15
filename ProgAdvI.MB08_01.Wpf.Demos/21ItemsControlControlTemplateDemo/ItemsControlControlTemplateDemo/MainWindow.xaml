@@ -1,0 +1,38 @@
+﻿<Window x:Class="ItemsControlControlTemplateDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItemsControlControlTemplateDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Width="200" Height="67">
+            <ListBox.Template>
+                <ControlTemplate TargetType="{x:Type ListBox}">
+                    <Border BorderThickness="1" BorderBrush="Black" CornerRadius="10">
+                        <ScrollViewer>
+                            <ScrollViewer.Clip>
+                                <RectangleGeometry Rect="0,0,198,65"
+                                                   RadiusX="9" RadiusY="9" />
+                            </ScrollViewer.Clip>
+
+                            <!-- ItemsPresenter ist analog ContentPresenter -->
+                            <ItemsPresenter Margin="20,0,0,0"/>
+                            <!-- IsTemsHost markiert in einem ControlTemplate das Panel, welches die (templated) Items anzeigen soll -->
+                            <!--<VirtualizingStackPanel IsItemsHost="True" />-->
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListBox.Template>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontFamily="{Binding}" FontSize="20" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+    </Grid>
+
+</Window>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="BindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Resources>
+            <XmlDataProvider x:Key="src" XPath="/myDoc/item">
+                <x:XData>
+                    <myDoc xmlns=''>
+                        <item title="One" />
+                        <item title="Two">
+                            <item title="First child" />
+                            <item title="Second child" />
+                            <item title="Third child" />
+                            <item title="Fourth child">
+                                <item title="First grandchild" />
+                                <item title="Second grandchild" />
+                                <item title="Third grandchild" />
+                            </item>
+
+                        </item>
+                        <item title="Three" />
+                        <item title="More" />
+                    </myDoc>
+                </x:XData>
+            </XmlDataProvider>
+        </Grid.Resources>
+
+
+
+        <TreeView DataContext="{StaticResource src}" ItemsSource="{Binding}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding XPath=item}">
+                    <TextBlock Text="{Binding XPath=@title}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>

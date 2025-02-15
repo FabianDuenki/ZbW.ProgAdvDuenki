@@ -1,0 +1,18 @@
+﻿<Application x:Class="ThemeDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ThemeDemo"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- für die referenzierten Assemblies muss CopyLocal auf true gesetzt werden -->
+
+        <!-- Windows XP (default, olive, silver) -->
+        <!--<ResourceDictionary Source="/PresentationFramework.Luna;component/themes/Luna.NormalColor.xaml" />-->
+        <!--<ResourceDictionary Source="/PresentationFramework.Luna;component/themes/Luna.HomeStead.xaml" />-->
+        <!--<ResourceDictionary Source="/PresentationFramework.Luna;component/themes/Luna.Metallic.xaml" />-->
+
+        <!-- ab Windows 8 -->
+        <!--<ResourceDictionary Source="/PresentationFramework.Aero2;component/themes/Aero2.NormalColor.xaml" />-->
+        <!--<ResourceDictionary Source="/PresentationFramework.AeroLite;component/themes/AeroLite.NormalColor.xaml" />-->
+    </Application.Resources>
+</Application>
