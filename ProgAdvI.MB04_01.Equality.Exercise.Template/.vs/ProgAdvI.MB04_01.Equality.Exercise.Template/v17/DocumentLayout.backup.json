@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvi.mb04_01.equality.exercise.template\\overridingequals\\phonenumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|solutionrelative:overridingequals\\phonenumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvi.mb04_01.equality.exercise.template\\overridingequals\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|solutionrelative:overridingequals\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvi.mb04_01.equality.exercise.template\\overridingequals\\ipair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{158B8858-E51D-4896-8232-7441D052FA4F}|OverridingEquals\\OverridingEquals.csproj|solutionrelative:overridingequals\\ipair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhoneNumber.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\PhoneNumber.cs",
+              "RelativeDocumentMoniker": "OverridingEquals\\PhoneNumber.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\PhoneNumber.cs*",
+              "RelativeToolTip": "OverridingEquals\\PhoneNumber.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:48:53.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPair.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\IPair.cs",
+              "RelativeDocumentMoniker": "OverridingEquals\\IPair.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\IPair.cs",
+              "RelativeToolTip": "OverridingEquals\\IPair.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:48:50.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\Employee.cs",
+              "RelativeDocumentMoniker": "OverridingEquals\\Employee.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvI.MB04_01.Equality.Exercise.Template\\OverridingEquals\\Employee.cs",
+              "RelativeToolTip": "OverridingEquals\\Employee.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:48:30.98Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

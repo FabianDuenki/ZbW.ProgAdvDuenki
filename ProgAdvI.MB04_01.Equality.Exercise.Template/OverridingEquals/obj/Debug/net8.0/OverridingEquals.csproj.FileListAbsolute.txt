@@ -1,0 +1,12 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\bin\Debug\net8.0\OverridingEquals.deps.json
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\bin\Debug\net8.0\OverridingEquals.dll
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\bin\Debug\net8.0\OverridingEquals.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.AssemblyInfoInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.AssemblyInfo.cs
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.sourcelink.json
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.dll
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\refint\OverridingEquals.dll
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\OverridingEquals.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvI.MB04_01.Equality.Exercise.Template\OverridingEquals\obj\Debug\net8.0\ref\OverridingEquals.dll
