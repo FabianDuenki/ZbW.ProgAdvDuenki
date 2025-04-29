@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\bin\Debug\1.2_DotNetList.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\bin\Debug\1.2_DotNetList.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\bin\Debug\1.2_DotNetList.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\obj\Debug\1.2_DotNetList.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\obj\Debug\1.2_DotNetList.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\obj\Debug\1.2_DotNetList.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.2_DotNetList\obj\Debug\1.2_DotNetList.pdb

@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\obj\Debug\1.1_UmbauGenerics.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\obj\Debug\1.1_UmbauGenerics.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\bin\Debug\1.1_UmbauGenerics.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\bin\Debug\1.1_UmbauGenerics.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\bin\Debug\1.1_UmbauGenerics.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\obj\Debug\1.1_UmbauGenerics.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.1_UmbauGenerics\obj\Debug\1.1_UmbauGenerics.pdb

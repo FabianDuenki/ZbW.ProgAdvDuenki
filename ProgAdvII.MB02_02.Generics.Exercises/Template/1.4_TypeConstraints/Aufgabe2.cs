@@ -6,6 +6,8 @@ namespace _1._4_TypeConstraints {
     //       Tipp: Sie müssen dazu zuerst einen neuen Typen(Klasse) definieren.
     class MyClass<T> where T : MyClass<T> {
     }
+    class MyOtherClass : MyClass<MyOtherClass> {
+    }
 
     // TODO: Neue Klasse erzeugen:
     // class ...

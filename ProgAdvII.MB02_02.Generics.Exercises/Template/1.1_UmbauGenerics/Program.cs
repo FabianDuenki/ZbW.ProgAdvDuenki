@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace _1._1_UmbauGenerics {
-    public class Person : IComparable {
+    public class Person : IComparable<Person> {
         public string Name { get; private set; }
         public int Age { get; private set; }
 
@@ -10,10 +10,9 @@ namespace _1._1_UmbauGenerics {
             Age = age;
         }
 
-        public int CompareTo(object p) {
-            Person pers = p as Person;
-            if (pers != null) {
-                return Age - pers.Age;
+        public int CompareTo(Person p) {
+            if (p != null) {
+                return Age - p.Age;
             }
 
             throw new Exception("p has wrong type");
@@ -31,7 +30,7 @@ namespace _1._1_UmbauGenerics {
             int[] ages = new int[] {45, 19, 28, 23, 18, 9, 108, 72, 30, 35};
 
             // MySortedList abfüllen
-            MySortedList list = new MySortedList();
+            MySortedList<Person> list = new MySortedList<Person>();
             for (int x = 0; x < names.Length; x++) {
                 list.Add(new Person(names[x], ages[x]));
             }

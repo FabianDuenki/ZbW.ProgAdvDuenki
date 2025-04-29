@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.4_typeconstraints\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|solutionrelative:1.4_typeconstraints\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.4_typeconstraints\\aufgabe3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|solutionrelative:1.4_typeconstraints\\aufgabe3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.4_typeconstraints\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|solutionrelative:1.4_typeconstraints\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.4_typeconstraints\\aufgabe2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBBE4869-3359-4FD0-A161-D70055DAC0C7}|1.4_TypeConstraints\\1.4_TypeConstraints.csproj|solutionrelative:1.4_typeconstraints\\aufgabe2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41773C0A-7D34-4C86-A393-EBBEFF7C79CA}|1.2_DotNetList\\1.2_DotNetList.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.2_dotnetlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41773C0A-7D34-4C86-A393-EBBEFF7C79CA}|1.2_DotNetList\\1.2_DotNetList.csproj|solutionrelative:1.2_dotnetlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F999480E-019F-4CD5-9582-305EC374A805}|1.1_UmbauGenerics\\1.1_UmbauGenerics.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.1_umbaugenerics\\mysortedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F999480E-019F-4CD5-9582-305EC374A805}|1.1_UmbauGenerics\\1.1_UmbauGenerics.csproj|solutionrelative:1.1_umbaugenerics\\mysortedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Aufgabe1.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe1.cs",
+              "RelativeDocumentMoniker": "1.4_TypeConstraints\\Aufgabe1.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe1.cs",
+              "RelativeToolTip": "1.4_TypeConstraints\\Aufgabe1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:17:59.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Program.cs",
+              "RelativeDocumentMoniker": "1.4_TypeConstraints\\Program.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Program.cs",
+              "RelativeToolTip": "1.4_TypeConstraints\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:16:44.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Aufgabe3.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe3.cs",
+              "RelativeDocumentMoniker": "1.4_TypeConstraints\\Aufgabe3.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe3.cs",
+              "RelativeToolTip": "1.4_TypeConstraints\\Aufgabe3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:15:07.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Aufgabe2.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe2.cs",
+              "RelativeDocumentMoniker": "1.4_TypeConstraints\\Aufgabe2.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.4_TypeConstraints\\Aufgabe2.cs",
+              "RelativeToolTip": "1.4_TypeConstraints\\Aufgabe2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:12:58.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MySortedList.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.1_UmbauGenerics\\MySortedList.cs",
+              "RelativeDocumentMoniker": "1.1_UmbauGenerics\\MySortedList.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.1_UmbauGenerics\\MySortedList.cs",
+              "RelativeToolTip": "1.1_UmbauGenerics\\MySortedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:40:31.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.2_DotNetList\\Program.cs",
+              "RelativeDocumentMoniker": "1.2_DotNetList\\Program.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.2_DotNetList\\Program.cs",
+              "RelativeToolTip": "1.2_DotNetList\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:32:39.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
