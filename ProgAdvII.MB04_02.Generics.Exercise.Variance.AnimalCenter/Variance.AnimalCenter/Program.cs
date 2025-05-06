@@ -41,8 +41,6 @@
         }
     }
 
-    // 4. Delegates mit Variance – klar, getrennt, verständlich
-
     // Kontravarianter Delegate: T ist Eingabe
     delegate void AnimalAction<T>(T animal);
 
