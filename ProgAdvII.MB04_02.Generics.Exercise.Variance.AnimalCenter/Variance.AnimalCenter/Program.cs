@@ -56,8 +56,4 @@
     interface IAnimalPairer<T> {
         T Mate(T partner);
     }
-
-    interface IAnimalEventSubscriber<T> {
-        void Subscribe(Action<T> onEvent);
-    }
 }
