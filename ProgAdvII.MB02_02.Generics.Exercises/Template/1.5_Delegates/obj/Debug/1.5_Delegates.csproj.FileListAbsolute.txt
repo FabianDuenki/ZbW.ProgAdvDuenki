@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\bin\Debug\1.5_Delegates.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\bin\Debug\1.5_Delegates.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\bin\Debug\1.5_Delegates.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\obj\Debug\1.5_Delegates.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\obj\Debug\1.5_Delegates.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\obj\Debug\1.5_Delegates.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Template\1.5_Delegates\obj\Debug\1.5_Delegates.pdb

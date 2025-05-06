@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\bin\Debug\1.3_Nullable.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\bin\Debug\1.3_Nullable.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\bin\Debug\1.3_Nullable.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\obj\Debug\1.3_Nullable.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\obj\Debug\1.3_Nullable.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\obj\Debug\1.3_Nullable.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB02_02.Generics.Exercises\Solution\1.3_Nullable\obj\Debug\1.3_Nullable.pdb

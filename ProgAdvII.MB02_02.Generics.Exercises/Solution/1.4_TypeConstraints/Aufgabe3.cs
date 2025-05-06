@@ -7,7 +7,7 @@ namespace _1._4_TypeConstraints {
     static class MyHelpers {
         static TDest CopyTo<TSource, TDest, TElement>(TSource source)
             where TSource : IEnumerable<TElement>
-            where TDest : IList<TElement>, new() {
+            where TDest : ICollection<TElement>, new() {
             TDest dest = new TDest();
             foreach (TElement element in source) {
                 dest.Add(element);
