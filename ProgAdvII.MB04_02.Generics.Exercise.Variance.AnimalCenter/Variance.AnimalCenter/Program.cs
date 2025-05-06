@@ -41,10 +41,8 @@
         }
     }
 
-    // Kontravarianter Delegate: T ist Eingabe
     delegate void AnimalAction<T>(T animal);
 
-    // Kovarianter Delegate: T ist Rückgabe
     delegate T AnimalFactory<T>();
 
     interface IAnimalFeeder<T> {
