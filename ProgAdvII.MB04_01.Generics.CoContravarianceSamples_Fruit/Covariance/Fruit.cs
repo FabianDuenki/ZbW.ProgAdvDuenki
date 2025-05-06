@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Covariance
-{
+﻿namespace Covariance {
     public class Fruit {
         public decimal Weight { get; set; }
     }

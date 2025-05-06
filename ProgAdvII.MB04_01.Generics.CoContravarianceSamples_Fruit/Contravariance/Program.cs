@@ -1,121 +1,57 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace Contravariance {
+    internal class Program {
+        public static void Main(string[] args) {
 
-using Contravariance;
+            FirstExample();
+            //ProcessFruits();
+        }
 
+        static void FirstExample() {
+            var appleAction = new MyAction<Apple>(a => Console.WriteLine($"Weight of Apple: {a.Weight}"));
+            PerformAppleAction(appleAction);
 
-FirstExample();
-//SimpleExample();
-//SortingWithInterface();
-//SortingWithDelegate();
+            var bananaAction = new MyAction<Banana>(b => Console.WriteLine($"Weight of Banana: {b.Weight}"));
+            PerformAppleAction(bananaAction);
 
-void FirstExample() {
-    var appleAction = new MyAction<Apple>(a => Console.WriteLine($"Weight of Apple: {a.Weight}"));
-    PerformAppleAction(appleAction);
+            var fruitAction = new MyAction<Fruit>(f => Console.WriteLine($"Weight of Fruit: {f.Weight}"));
+            PerformAppleAction(fruitAction);
+        }
 
-    var bananaAction = new MyAction<Banana>(b => Console.WriteLine($"Weight of Banana: {b.Weight}"));
-    PerformAppleAction(bananaAction);
+        static void PerformAppleAction(MyAction<Apple> action) {
+            var apple = new Apple { Weight = 600 };
+            action(apple);
+        }
 
-    var fruitAction = new MyAction<Fruit>(f => Console.WriteLine($"Weight of Fruit: {f.Weight}"));
-    PerformAppleAction(fruitAction);
-}
+        static void ProcessFruits() {
+            IProcessor<Fruit> fruitProcessor = new FruitProcessor();
 
-void PerformAppleAction(MyAction<Apple> zebraAction) {
-    var apple = new Apple { Weight = 600 };
-    zebraAction(apple);
-}
+            IProcessor<Apple> appleProcessor = fruitProcessor;
+            IProcessor<Banana> bananaProcessor = fruitProcessor;
 
-
-void SimpleExample() {
-    ICovariant<Apple> covariantApples = new Covariant<Apple>();
-
-    ICovariant<Fruit> covariantFruit = covariantApples;
-
-    IContravariant<Fruit> contravariantFruit = new Contravariant<Fruit>();
-
-    IContravariant<Apple> contravariantApples = contravariantFruit;
-}
-
+            // Verarbeite Apfel und Banane mit demselben FruitProcessor
+            appleProcessor.Process(new Apple());
+            bananaProcessor.Process(new Banana());
+        }
+    }
 
 
-void FirstSample()
-{
-    BagOfFruits fruits = new BagOfApples();
-    fruits.Add(new Apple { Name = "Granny Smith", Weight = 80, ForEating = true });
-    fruits.Add(new Banana { Name = "Blue Java", Weight = 60});
-
-    Console.WriteLine(fruits.Get(0));
-    Console.WriteLine(fruits.Get(1));
-}
-
-void SortingWithInterface() {
-    var apples = new List<Apple> {
-        new Apple { Name = "Granny Smith", Weight = 80, ForEating = true },
-        new Apple { Name = "Arthur Turner", Weight = 70, ForEating = false },
-        new Apple { Name = "Honeygold", Weight = 80, ForEating = true },
-        new Apple { Name = "Kerry Pippin", Weight = 82, ForEating = true },
-        new Apple { Name = "Newton Wonder", Weight = 75, ForEating = false }
-    };
-
-    foreach (var apple in apples)
-        Console.WriteLine(apple);
-
-    Console.WriteLine();
-
-    apples.Sort(new FruitComparer());
+    delegate void MyAction<T>(T obj);
 
 
-    foreach (var apple in apples)
-        Console.WriteLine(apple);
+    interface IProcessor<T> {
+        void Process(T input);
+    }
 
-    Console.WriteLine();
-    Console.WriteLine();
+    // Verarbeitet alle Früchte
+    public class FruitProcessor : IProcessor<Fruit> {
+        public void Process(Fruit fruit) {
+            Console.WriteLine($"Verarbeite {fruit.Name} zu Saft.");
+        }
+    }
 
-    var bananas = new List<Banana> {
-        new Banana { Name = "Blue Java", Weight = 108 },
-        new Banana { Name = "Cavendish", Weight = 103 },
-        new Banana { Name = "Gros Michel", Weight = 105 },
-        new Banana { Name = "Baby", Weight = 78 }
-    };
+    public interface MyEnumerable<out T> {
+        T GetElementAt(int index);
 
-    foreach (var banana in bananas)
-        Console.WriteLine(banana);
-
-    Console.WriteLine();
-
-    bananas.Sort(new FruitComparer());
-
-
-    foreach (var banana in bananas)
-        Console.WriteLine(banana);
-
-}
-
-void SortingWithDelegate()
-{
-    var apples = new List<Apple>
-    {
-        new Apple {Name = "Granny Smith", Weight = 80, ForEating = true },
-        new Apple {Name = "Arthur Turner", Weight = 70, ForEating = false },
-        new Apple {Name = "Honeygold", Weight = 80, ForEating = true },
-        new Apple {Name = "Kerry Pippin", Weight = 82, ForEating = true },
-        new Apple {Name = "Newton Wonder", Weight = 75, ForEating = false }
-    };
-
-    foreach (var apple in apples)
-        Console.WriteLine(apple);
-
-    Console.WriteLine();
-
-    SortingDelegate<Fruit> sorter = (l, r) => (int)(l.Weight - r.Weight);
-
-    apples.Sort((l, r) => sorter(l,r));
-
-    foreach (var apple in apples)
-        Console.WriteLine(apple);
-}
-
-public interface MyEnumerable<out T> {
-    T GetElementAt(int index);
-
-    //void AddElement(T element);
+        //void AddElement(T element);
+    }
 }
