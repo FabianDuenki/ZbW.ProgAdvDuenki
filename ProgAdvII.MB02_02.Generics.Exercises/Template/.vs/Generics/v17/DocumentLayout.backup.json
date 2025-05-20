@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.6_zusatzaufgaben\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|solutionrelative:1.6_zusatzaufgaben\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.6_zusatzaufgaben\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|solutionrelative:1.6_zusatzaufgaben\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.6_Zusatzaufgaben\\Program.cs",
+              "RelativeDocumentMoniker": "1.6_Zusatzaufgaben\\Program.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.6_Zusatzaufgaben\\Program.cs",
+              "RelativeToolTip": "1.6_Zusatzaufgaben\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:55:53.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Aufgabe1.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.6_Zusatzaufgaben\\Aufgabe1.cs",
+              "RelativeDocumentMoniker": "1.6_Zusatzaufgaben\\Aufgabe1.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.6_Zusatzaufgaben\\Aufgabe1.cs",
+              "RelativeToolTip": "1.6_Zusatzaufgaben\\Aufgabe1.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:55:47.553Z",
+              "EditorCaption": ""
             }
           ]
         }

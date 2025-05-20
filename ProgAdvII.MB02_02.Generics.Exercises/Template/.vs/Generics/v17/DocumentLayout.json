@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|solutionrelative:1.6_zusatzaufgaben\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb02_02.generics.exercises\\template\\1.6_zusatzaufgaben\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB02_02.Generics.Exercises\\Template\\1.6_zusatzaufgaben\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2190D95-B10C-4635-B478-ABBA1F8BAB58}|1.6_Zusatzaufgaben\\1.6_Zusatzaufgaben.csproj|solutionrelative:1.6_zusatzaufgaben\\aufgabe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,8 +47,7 @@
               "RelativeToolTip": "1.6_Zusatzaufgaben\\Aufgabe1.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T11:55:47.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T11:55:47.553Z"
             }
           ]
         }
