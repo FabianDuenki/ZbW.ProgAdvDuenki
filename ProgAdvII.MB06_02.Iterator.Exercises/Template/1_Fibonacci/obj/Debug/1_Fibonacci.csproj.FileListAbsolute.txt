@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\bin\Debug\1_Fibonacci.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\bin\Debug\1_Fibonacci.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\bin\Debug\1_Fibonacci.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\obj\Debug\1_Fibonacci.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\obj\Debug\1_Fibonacci.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\obj\Debug\1_Fibonacci.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\1_Fibonacci\obj\Debug\1_Fibonacci.pdb

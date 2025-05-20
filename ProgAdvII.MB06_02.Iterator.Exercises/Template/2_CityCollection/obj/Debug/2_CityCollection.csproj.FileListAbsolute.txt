@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\bin\Debug\2_CityCollection.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\bin\Debug\2_CityCollection.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\bin\Debug\2_CityCollection.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\obj\Debug\2_CityCollection.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\obj\Debug\2_CityCollection.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\obj\Debug\2_CityCollection.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\2_CityCollection\obj\Debug\2_CityCollection.pdb

@@ -9,26 +9,26 @@ namespace _3_RecursiveList {
             list1.Append("C#");
             list1.Append("---");
 
-            // Iteriere über die Liste 
+            //Iteriere über die Liste
             // TODO: RecursiveList.Traverse implementieren
             Console.WriteLine("RecursiveList.Traverse");
-            //foreach (string s in list1.Traverse)
-            //{
-            //    Console.WriteLine(s);
-            //}
+            foreach (string s in list1.Traverse)
+            {
+                Console.WriteLine(s);
+            }
 
-            // Iteriere über die Liste im umgekehrter Reihenfolge
-            // TODO: RecursiveList.Inverse implementieren
+            //Iteriere über die Liste im umgekehrter Reihenfolge
+            //TODO: RecursiveList.Inverse implementieren
             Console.WriteLine("RecursiveList.Inverse");
-            //foreach (string s in list1.Inverse)
-            //{
-            //    Console.WriteLine(s);
-            //}
+            foreach (string s in list1.Inverse)
+            {   
+                Console.WriteLine(s);
+            }
 
-            // ForEach über die Liste
+            //ForEach über die Liste
             // TODO: RecursiveList.ForEach implementieren
             Console.WriteLine("RecursiveList.ForEach");
-            //list1.ForEach(delegate(string s) { Console.WriteLine(s); });
+            list1.ForEach(delegate (string s) { Console.WriteLine(s); });
 
 
             RecursiveList<string> list2 = new RecursiveList<string>();
