@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\bin\Debug\6_QueryOperators.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\bin\Debug\6_QueryOperators.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\bin\Debug\6_QueryOperators.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\obj\Debug\6_QueryOperators.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\obj\Debug\6_QueryOperators.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\obj\Debug\6_QueryOperators.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB06_02.Iterator.Exercises\Template\6_QueryOperators\obj\Debug\6_QueryOperators.pdb

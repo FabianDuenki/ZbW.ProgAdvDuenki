@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb06_02.iterator.exercises\\template\\3_recursivelist\\recursivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|solutionrelative:3_recursivelist\\recursivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0FE64D-1C6C-4A21-89F0-AE677012ED07}|6_QueryOperators\\6_QueryOperators.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb06_02.iterator.exercises\\template\\6_queryoperators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0FE64D-1C6C-4A21-89F0-AE677012ED07}|6_QueryOperators\\6_QueryOperators.csproj|solutionrelative:6_queryoperators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_recursivelist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|solutionrelative:3_recursivelist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0FE64D-1C6C-4A21-89F0-AE677012ED07}|6_QueryOperators\\6_QueryOperators.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb06_02.iterator.exercises\\template\\6_queryoperators\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0FE64D-1C6C-4A21-89F0-AE677012ED07}|6_QueryOperators\\6_QueryOperators.csproj|solutionrelative:6_queryoperators\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +27,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RecursiveList.cs",
-              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_RecursiveList\\RecursiveList.cs",
-              "RelativeDocumentMoniker": "3_RecursiveList\\RecursiveList.cs",
-              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_RecursiveList\\RecursiveList.cs",
-              "RelativeToolTip": "3_RecursiveList\\RecursiveList.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBYAAAAiAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\6_QueryOperators\\Program.cs",
+              "RelativeDocumentMoniker": "6_QueryOperators\\Program.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\6_QueryOperators\\Program.cs",
+              "RelativeToolTip": "6_QueryOperators\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T13:49:05.747Z",
+              "WhenOpened": "2025-05-27T13:49:43.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_RecursiveList\\Program.cs",
-              "RelativeDocumentMoniker": "3_RecursiveList\\Program.cs",
-              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_RecursiveList\\Program.cs",
-              "RelativeToolTip": "3_RecursiveList\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\6_QueryOperators\\Extensions.cs",
+              "RelativeDocumentMoniker": "6_QueryOperators\\Extensions.cs",
+              "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\6_QueryOperators\\Extensions.cs",
+              "RelativeToolTip": "6_QueryOperators\\Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T13:49:04.792Z"
+              "WhenOpened": "2025-05-27T13:49:40.315Z",
+              "EditorCaption": ""
             }
           ]
         }

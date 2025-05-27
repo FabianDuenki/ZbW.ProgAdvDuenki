@@ -1,4 +1,6 @@
-﻿using System;
+﻿using _6_ExtensionMethodsSimple;
+using System;
+using System.Collections.Generic;
 
 namespace _6_QueryOperators {
     class Program {
@@ -11,12 +13,13 @@ namespace _6_QueryOperators {
 
             // Operator 'ZbwMultipleOf' / Vielfaches von 4 auf 'numbers'
             Console.WriteLine("---------- \r\nOperator 'ZbwMultipleOf' / Vielfaches von 4 auf 'numbers'");
-            //IEnumerable<int> multiple4 = numbers.ZbwMultipleOf(4);
-            //foreach (int i in multiple4) { Console.WriteLine(i); }
+            IEnumerable<int> multiple4 = numbers.ZbwMultipleOf(4);
+            foreach (int i in multiple4) { Console.WriteLine(i); }
 
             // Operator 'ZbwMultipleOf' / Vielfaches von 2 und 3 auf 'numbers'
             Console.WriteLine("---------- \r\nOperator 'ZbwMultipleOf' / Vielfaches von 2 und 3 auf 'numbers'");
-            // TODO: Implementieren
+            IEnumerable<int> multiple2And3 = numbers.ZbwMultipleOf(2).ZbwMultipleOf(2);
+            foreach (int i in multiple2And3) { Console.WriteLine(i); }
 
 
             /****** ZbwWhere ******/
