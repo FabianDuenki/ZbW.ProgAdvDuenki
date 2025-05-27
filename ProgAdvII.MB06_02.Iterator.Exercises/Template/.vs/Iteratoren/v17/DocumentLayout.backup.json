@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|solutionrelative:3_recursivelist\\recursivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|c:\\users\\u54620\\source\\zbw.progadv\\progadvii.mb06_02.iterator.exercises\\template\\3_recursivelist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_recursivelist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3B7D47-FDA5-4EFD-8A14-72444013C75E}|3_RecursiveList\\3_RecursiveList.csproj|solutionrelative:3_recursivelist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "3_RecursiveList\\RecursiveList.cs",
               "ToolTip": "C:\\Users\\U54620\\source\\ZbW.ProgAdv\\ProgAdvII.MB06_02.Iterator.Exercises\\Template\\3_RecursiveList\\RecursiveList.cs",
               "RelativeToolTip": "3_RecursiveList\\RecursiveList.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T13:49:05.747Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "3_RecursiveList\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T13:49:04.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T13:49:04.792Z"
             }
           ]
         }
