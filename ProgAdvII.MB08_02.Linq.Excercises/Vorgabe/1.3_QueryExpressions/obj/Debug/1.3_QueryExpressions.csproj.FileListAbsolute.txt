@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\bin\Debug\1.3_QueryExpressions.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\bin\Debug\1.3_QueryExpressions.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\bin\Debug\1.3_QueryExpressions.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\obj\Debug\1.3_QueryExpressions.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\obj\Debug\1.3_QueryExpressions.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\obj\Debug\1.3_QueryExpressions.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.3_QueryExpressions\obj\Debug\1.3_QueryExpressions.pdb

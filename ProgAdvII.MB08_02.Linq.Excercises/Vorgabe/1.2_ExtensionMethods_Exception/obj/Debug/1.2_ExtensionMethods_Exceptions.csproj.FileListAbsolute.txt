@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\bin\Debug\1.2_ExtensionMethods.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\bin\Debug\1.2_ExtensionMethods.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\bin\Debug\1.2_ExtensionMethods.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\obj\Debug\1.2_ExtensionMethods_Exceptions.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\obj\Debug\1.2_ExtensionMethods_Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\obj\Debug\1.2_ExtensionMethods.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.2_ExtensionMethods_Exception\obj\Debug\1.2_ExtensionMethods.pdb

@@ -1,0 +1,7 @@
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\bin\Debug\1.1_ExtensionMethods_QueryOperators.exe.config
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\bin\Debug\1.1_ExtensionMethods_QueryOperators.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\bin\Debug\1.1_ExtensionMethods_QueryOperators.pdb
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\obj\Debug\1.1_ExtensionMethods_QueryOperators.csproj.AssemblyReference.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\obj\Debug\1.1_ExtensionMethods_QueryOperators.csproj.CoreCompileInputs.cache
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\obj\Debug\1.1_ExtensionMethods_QueryOperators.exe
+C:\Users\U54620\source\ZbW.ProgAdv\ProgAdvII.MB08_02.Linq.Excercises\Vorgabe\1.1_ExtensionMethods_QueryOperators\obj\Debug\1.1_ExtensionMethods_QueryOperators.pdb
