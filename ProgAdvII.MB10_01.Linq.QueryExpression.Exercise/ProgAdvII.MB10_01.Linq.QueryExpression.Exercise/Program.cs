@@ -11,11 +11,11 @@
             };
 
             List<Marking> markings = new List<Marking> {
-                new Marking { StudentId = 2009001, Course = "Programming", Mark = 3 },
-                new Marking { StudentId = 2009002, Course = "Databases", Mark = 2 },
-                new Marking { StudentId = 2009003, Course = "Graphics", Mark = 1 },
-                new Marking { StudentId = 2009004, Course = "Chemistry", Mark = 1 },
-                new Marking { StudentId = 2009001, Course = "Math", Mark = 2 }
+                new Marking { StudentId = 2009001, Course = "Programming", Mark = 4 },
+                new Marking { StudentId = 2009002, Course = "Databases", Mark = 5 },
+                new Marking { StudentId = 2009003, Course = "Graphics", Mark = 6 },
+                new Marking { StudentId = 2009004, Course = "Chemistry", Mark = 6 },
+                new Marking { StudentId = 2009001, Course = "Math", Mark = 5 }
             };
 
             var result = GetComputingStudentStats(students, markings);
