@@ -23,8 +23,8 @@
             bool success = true;
 
             var expected = new[] {
-                new { Name = "John Doe", CourseCount = 2, AverageMark = 2.5 },
-                new { Name = "Sam Dough", CourseCount = 1, AverageMark = 1.0 }
+                new { Name = "Sam Dough", CourseCount = 1, AverageMark = 6.0 },
+                new { Name = "John Doe", CourseCount = 2, AverageMark = 4.5 }                
             };
 
             var actual = result.ToList();
