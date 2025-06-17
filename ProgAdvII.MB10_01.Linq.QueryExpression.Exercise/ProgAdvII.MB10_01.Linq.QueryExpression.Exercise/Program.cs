@@ -51,8 +51,20 @@
         }
 
         public static IEnumerable<StudentResult> GetComputingStudentStats(List<Student> students, List<Marking> markings) {
-            // TODO: Query gemäss Aufgabenstellung implementieren
-            throw new NotImplementedException();
+            var result =
+                from s in students
+                where s.Subject == "Computing"
+                join m in markings on s.Id equals m.StudentId
+                    into studentmarkings
+                let averageMark = studentmarkings.Select(s => s.Mark).Average()
+                orderby averageMark descending
+                select new StudentResult
+                {
+                    Name = s.Name,
+                    CourseCount = studentmarkings.Count(),
+                    AverageMark = averageMark
+                };
+            return result;
         }
     }
 

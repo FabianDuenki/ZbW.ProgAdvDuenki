@@ -38,31 +38,47 @@ namespace _1._3_QueryExpressions {
             // ------------------------------------------------------------------------------------------- //
             // TODO: Liste der Mitarbeiter die im State WA wohnen. 
 
-            //var queryWashington = ;
+            var queryWashington = employees.Where(e => e.State == "WA");
 
 
             Console.WriteLine("---------- \r\nListe der Mitarbeiter die im State WA wohnen");
-            //queryWashington.ForEach(e => Console.WriteLine(e.Name));
+            queryWashington.ForEach(e => Console.WriteLine(e.Name));
 
 
             // ------------------------------------------------------------------------------------------- //
             // TODO: Liste der Namen und Adressen der Mitarbeiter im State WA. Sortiert nach Name absteigend. 
 
-            //var queryWashingtonSorted = ;
+            var queryWashingtonSorted = queryWashington
+                    .Select((e) =>
+                    {
+                        return new
+                        {
+                            Name = e.Name,
+                            Address = e.Address
+                        };
+                    })
+                    .OrderByDescending(e => e.Name);
 
 
             Console.WriteLine("---------- \r\nListe der Namen und Adressen der Mitarbeiter im State WA");
-            //queryWashingtonSorted.ForEach(e => Console.WriteLine("Name: {0}, Phone: {1}", e.Name, e.Address));
+            queryWashingtonSorted.ForEach(e => Console.WriteLine("Name: {0}, Phone: {1}", e.Name, e.Address));
 
 
             // ------------------------------------------------------------------------------------------- //
             // TODO: Liste der Department-Namen und der Anzahl Mitarbeiter der Departments.  
 
-            //var queryDepartments = ;
+            var queryDepartments = departments.Select((d) =>
+            {
+                return new
+                {
+                    Department = d.Name,
+                    EmployeeCount = employees.Where(e => e.DepId == d.Id).Count()
+                };
+            });
 
 
             Console.WriteLine("---------- \r\nListe der Department-Namen und der Anzahl Mitarbeiter der Departments");
-            //queryDepartments.ForEach(d => Console.WriteLine("Department: {0}, EmployeeCount: {1}", d.Department, d.EmployeeCount));
+            queryDepartments.ForEach(d => Console.WriteLine("Department: {0}, EmployeeCount: {1}", d.Department, d.EmployeeCount));
 
 
             // ------------------------------------------------------------------------------------------- //
@@ -70,11 +86,20 @@ namespace _1._3_QueryExpressions {
             // Ausgabe: Name des Departments, Name des Mitarbeiters
             // Sortiert nach Departmentname 
 
-            //var empQuery = ;
+            var empQuery = employees
+                .Select((e) =>
+                    {
+                        return new
+                        {
+                            EmployeeName = e.Name,
+                            DepartmentName = departments.Find(d => d.Id == e.DepId).Name
+                        };
+                    })
+                .OrderBy(e => e.DepartmentName);
 
 
             Console.WriteLine("---------- \r\nListe der Departments mit ihren Mitarbeitern");
-            //empQuery.ForEach(c => Console.WriteLine("Name: {0}, Department: {1}", c.EmployeeName, c.DepartmentName));
+            empQuery.ForEach(c => Console.WriteLine("Name: {0}, Department: {1}", c.EmployeeName, c.DepartmentName));
 
             // ------------------------------------------------------------------------------------------- //
             // TODO: Liste der Departments mit dem Salär des bestverdienenden Mitarbeiters. 
@@ -82,11 +107,18 @@ namespace _1._3_QueryExpressions {
             // Sortiert nach höchstem Salär, absteigend 
             // Tipp: Verwenden Sie die „let“ Klausel für das Speichern von Zwischenresultaten.
 
-            //var maxDeptSalary = ;
+            var maxDeptSalary = departments.Select((d) =>
+            {
+                return new
+                {
+                    DepartmentName = d.Name,
+                    MaxSalary = employees.Where(e => e.DepId == d.Id).Select(e => e.Salary).Max()
+                };
+            });
 
 
             Console.WriteLine("---------- \r\nListe der Departments mit dem Salär des bestverdienenden Mitarbeiters");
-            //maxDeptSalary.ForEach(c => Console.WriteLine("Department: {0}, Höchster Salär: {1}", c.DepartmentName, c.MaxSalary));
+            maxDeptSalary.ForEach(c => Console.WriteLine("Department: {0}, Höchster Salär: {1}", c.DepartmentName, c.MaxSalary));
 
 
             // ------------------------------------------------------------------------------------------- //
@@ -94,11 +126,21 @@ namespace _1._3_QueryExpressions {
             // Ausgabe: Name des Projektes, Name des Mitarbeiters
             // Sortiert nach Name des Projektes, Name des Mitarbeiters 
 
-            // var projList = 
+            var projList = projects
+                .Select((p) =>
+                    {
+                        return new
+                        {
+                            Project = p.Name,
+                            Employee = p.ProjectManager?.Name
+                        };
+                    })
+                .OrderBy(p => p.Project)
+                .ThenBy(p => p.Employee);
 
 
             Console.WriteLine("---------- \r\nListe der Projekte und der beteiligten Mitarbeiter");
-            //projList.ForEach(p => Console.WriteLine("Projekt: {0} Mitarbeiter: {1}", p.Project, p.Employee));
+            projList.ForEach(p => Console.WriteLine("Projekt: {0} Mitarbeiter: {1}", p.Project, p.Employee));
 
 
             // ------------------------------------------------------------------------------------------- //
@@ -108,10 +150,22 @@ namespace _1._3_QueryExpressions {
             // Durchschnittliches Salaer der Mitarbeiter im Projekt
             // Sortiert nach Projektname, Anzahl Mitarbeiter
 
-            //var projStatistics = 
+            var projStatistics = projects
+                .Select((p) =>
+                {
+                    return new
+                    {
+                        Project = p.Name,
+                        Mgr = p.ProjectManager?.Name ?? "tba",
+                        EmpCount = p.Employees?.Count(),
+                        AvgSalary = p.Employees.Select(e => e?.Salary).Average()
+                    };
+                })
+                .OrderBy(p => p.Project)
+                .ThenByDescending(p => p.EmpCount);
 
             Console.WriteLine("---------- \r\nListe der Projekte und ihrer Statistik");
-            //projStatistics.ForEach(p => Console.WriteLine("Project {0} Mgr {1} Number Employees {2} Average Salary {3}", p.Project, p.Mgr, p.EmpCount, p.AvgSalary));
+            projStatistics.ForEach(p => Console.WriteLine("Project {0} Mgr {1} Number Employees {2} Average Salary {3}", p.Project, p.Mgr, p.EmpCount, p.AvgSalary));
 
             Console.ReadKey();
         }

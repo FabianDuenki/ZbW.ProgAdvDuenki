@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using System.Reflection.Metadata;
 
 namespace LinqExpressionTree {
     internal class Program {
@@ -6,10 +7,10 @@ namespace LinqExpressionTree {
 
             Samples();
 
-            Expression<Func<Customer, bool>> expr = c => c.Name.StartsWith("Kehl") && c.City == "Au";
+            //Expression<Func<Customer, bool>> expr = c => c.Name.StartsWith("Kehl") && c.City == "Au";
 
             // TODO: Diese Query korrekt übersetzen
-            //Expression<Func<Customer, bool>> expr = c => c.Name.StartsWith("Kehl") && c.City == "Au" && c.Age >= 18 && !c.IsDeleted;
+            Expression<Func<Customer, bool>> expr = c => c.Name.StartsWith("Kehl") && c.City == "Au" && c.Age >= 18 && !c.IsDeleted;
 
             string queryCondition = GenerateQueryCondition(expr);
             Console.WriteLine(queryCondition); 
@@ -67,6 +68,17 @@ namespace LinqExpressionTree {
                         return $"{columnName} = '{value}'";
                     }
                 }
+
+                if (binaryExpr.NodeType == ExpressionType.GreaterThanOrEqual)
+                {
+                    if (binaryExpr.Left is MemberExpression memberExpr && binaryExpr.Right is ConstantExpression constantExpr)
+                    {
+                        var columnName = memberExpr.Member.Name;
+                        var value = constantExpr.Value.ToString();
+                        Console.WriteLine($"Handling: {expr.NodeType}, {expr.GetType().Name}");
+                        return $"{columnName} >= {value}";
+                    }
+                }
             }
 
             if (expr is MethodCallExpression callExpr) {
@@ -78,7 +90,18 @@ namespace LinqExpressionTree {
                         return $"{GetColumnName(callExpr.Object)} LIKE '{value}%'";
                     }
                 }
-            } 
+            }
+
+            if (expr is UnaryExpression unaryExpr)
+            {
+                Console.WriteLine(expr.GetType().Name);
+                Console.WriteLine($"Handling: {unaryExpr.NodeType}, {unaryExpr.GetType().Name}");
+                if (unaryExpr.Operand is MemberExpression memberexpression)
+                {
+                    return $"{unaryExpr.NodeType} {memberexpression.Member.Name}";
+                }
+            }
+
             return "[UNSUPPORTED]";
         }
 

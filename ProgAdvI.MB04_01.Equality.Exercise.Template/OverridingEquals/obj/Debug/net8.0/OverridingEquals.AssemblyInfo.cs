@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OverridingEquals")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a95e65f2641441733428dacc9c320c31e0895fce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a8e721c80326a76d8f14380b473790d3ab40a22")]
 [assembly: System.Reflection.AssemblyProductAttribute("OverridingEquals")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OverridingEquals")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
