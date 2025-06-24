@@ -18,6 +18,32 @@ namespace Reflection1 {
                 return;
             }
 
+            var assembly = Assembly.LoadFile(path);
+            if (assembly == null) return;
+
+            Console.WriteLine($"Assembly: {assembly.FullName}");
+           
+            foreach(var module in assembly.GetModules())
+            {
+                Console.WriteLine($"\tModule: {module.Name}");
+                assembly.GetTypes();
+                foreach(var type in assembly.GetTypes())
+                {
+                    Console.WriteLine($"\t\tClass: {type.Name}");
+                    foreach (var method in type.GetMethods())
+                    {
+                        var methodParameters = method.GetParameters().Select(p => { return { Type: p.ParameterType.Name, Name: p.Name} });
+                        Console.WriteLine($"\t\t\tMethod: {method.Name}({methodParameters.Select(p=>$"{p.ParameterType.Name} {p.Name}")})");
+                    }
+                }
+                foreach(var field in module.GetFields())
+                {
+
+                }
+            }
+
+            
+
             // TODO: Implementierung gemäss Aufgabenstellung
         }
     }
