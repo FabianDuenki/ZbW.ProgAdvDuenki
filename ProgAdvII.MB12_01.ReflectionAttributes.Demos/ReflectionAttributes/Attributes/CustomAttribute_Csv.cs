@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -13,7 +13,7 @@ namespace ReflectionAttributes.Attributes {
                     new Address("Beat", "Hauptstrasse 2", "9000", "St. Gallen"),
                     new Address("Sepp", "Arosastrasse 12", "7000", "Chur")
                 };
-                Writer.SaveToCsv(addresses, @"C:\Temp\addresses.csv");
+                Writer.SaveToCsv(addresses, @"C:\Temp\aaa\addresses.csv");
 
                 var articles = new List<Artikel> {
                     new Artikel {ArtNr = "aaa", Bez = "Bezeichnung", Preis = 2},
@@ -24,7 +24,7 @@ namespace ReflectionAttributes.Attributes {
         }
 
         public class Address {
-            [CsvName("Name"), Uppercase]
+            [CsvName("Vorname"), Uppercase]
             public string Name { get; set; }
 
             [CsvName("StrasseUndHausnummer"), Lowercase]
@@ -89,44 +89,27 @@ namespace ReflectionAttributes.Attributes {
                     File.Delete(fileName);
                 }
 
-                Type containedType = typeof(T);
-                PropertyInfo[] properties = containedType.GetProperties();
+                // TODO: Alle Properties von T ermitteln (Reflection)
 
                 using (StreamWriter writer = new StreamWriter(fileName, false)) {
-                    // Header
-                    foreach (PropertyInfo pi in properties) {
-                        string writeThis;
+                    // Header erstellen: prop1;prop2;prop3;...
 
-                        if (pi.IsDefined(typeof(CsvNameAttribute), true)) {
-                            CsvNameAttribute csvName = (CsvNameAttribute) pi.GetCustomAttributes(typeof(CsvNameAttribute), true)[0];
-                            writeThis = csvName.Name + ";";
-                        } else {
-                            // Default: Ueberschrift = Feldname
-                            writeThis = pi.Name + ";";
-                        }
+                    // TODO: über alle Properties iterieren
+                    //       Für jedes Property prüfen, ob das Attribut CsvNameAttribute vorhanden ist
+                    //       wenn ja, Name vom Attribut
+                    //       wenn nein, Propertyname
 
-                        writer.Write(writeThis);
-                        Console.Write(writeThis);
-                    }
+                    //       writer.Write(txt) schreibt den txt
 
                     writer.WriteLine();
                     Console.WriteLine();
 
                     // Content
                     foreach (T elem in source) {
-                        foreach (PropertyInfo pi in properties) {
-                            string writeThis;
+                        // TODO: für elem jedes Property auslesen
+                        //       wenn das Property IStringFilter als Attribut hat, dann den Wert über IStringFilter.Filter() konvertieren
+                        //       sonst den Wert 1:1 verwenden.
 
-                            if (pi.IsDefined(typeof(IStringFilter), true)) {
-                                IStringFilter flt = (IStringFilter) pi.GetCustomAttributes(typeof(IStringFilter), true)[0];
-                                writeThis = flt.Filter(pi.GetValue(elem).ToString()) + ";";
-                            } else {
-                                writeThis = pi.GetValue(elem) + ";";
-                            }
-
-                            writer.Write(writeThis);
-                            Console.Write(writeThis);
-                        }
 
                         writer.WriteLine();
                         Console.WriteLine();
