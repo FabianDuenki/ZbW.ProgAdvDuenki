@@ -8,7 +8,7 @@ using ReflectionAttributes.Attributes.ReflectionDemos;
 namespace ReflectionAttributes {
     public class Program {
         public static void Main(string[] args) {
-
+            /*
             //Type sampleType = typeof(SampleClass);
 
             var assembly = Assembly.LoadFile(@"C:\Users\tkehl\source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll");
@@ -47,14 +47,16 @@ namespace ReflectionAttributes {
             CustomAttribute_Author.TestClassAttributes();
             CustomAttribute_Author.TestPropertyAttributes();
 
+            */
             CustomAttribute_Csv.Test();
-
+            /*
             ReflectionAttributes.Emit.EmitDemo.Test();
             Emit.EmitDemo.TestZbwEmitDemoAssembly();
 
             AttributeConditional.Test(new []{"a"});
 
             AttributeObsolete.Test();
+            */
         }
     }
 

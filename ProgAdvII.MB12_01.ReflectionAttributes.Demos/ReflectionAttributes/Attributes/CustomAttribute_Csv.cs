@@ -13,13 +13,13 @@ namespace ReflectionAttributes.Attributes {
                     new Address("Beat", "Hauptstrasse 2", "9000", "St. Gallen"),
                     new Address("Sepp", "Arosastrasse 12", "7000", "Chur")
                 };
-                Writer.SaveToCsv(addresses, @"C:\Temp\aaa\addresses.csv");
+                Writer.SaveToCsv(addresses, @"C:\Users\U54620\Downloads\addresses.csv");
 
                 var articles = new List<Artikel> {
                     new Artikel {ArtNr = "aaa", Bez = "Bezeichnung", Preis = 2},
                     new Artikel {ArtNr = "bbb", Bez = "bez2", Preis = 4},
                 };
-                Writer.SaveToCsv(articles, @"C:\Temp\articles.csv");
+                Writer.SaveToCsv(articles, @"C:\Users\U54620\Downloads\addresses.csv");
             }
         }
 
@@ -91,8 +91,20 @@ namespace ReflectionAttributes.Attributes {
 
                 // TODO: Alle Properties von T ermitteln (Reflection)
 
+                Type containedType = typeof(T);
+                PropertyInfo[] properties = containedType.GetProperties();
+
                 using (StreamWriter writer = new StreamWriter(fileName, false)) {
                     // Header erstellen: prop1;prop2;prop3;...
+                    foreach (PropertyInfo property in properties)
+                    {
+                        if (property.GetCustomAttribute<CsvNameAttribute>() == null) continue;
+
+                        var csvName = property.GetCustomAttribute<CsvNameAttribute>();
+
+                        writer.Write($"{csvName.Name};");
+                        Console.Write($"{csvName.Name};");
+                    }
 
                     // TODO: über alle Properties iterieren
                     //       Für jedes Property prüfen, ob das Attribut CsvNameAttribute vorhanden ist
@@ -103,13 +115,27 @@ namespace ReflectionAttributes.Attributes {
 
                     writer.WriteLine();
                     Console.WriteLine();
+                    Console.WriteLine("---------------------------------------------------------------------------");
 
                     // Content
                     foreach (T elem in source) {
                         // TODO: für elem jedes Property auslesen
                         //       wenn das Property IStringFilter als Attribut hat, dann den Wert über IStringFilter.Filter() konvertieren
                         //       sonst den Wert 1:1 verwenden.
+                        foreach (var pi in properties)
+                        {
+                            if (!pi.IsDefined(typeof(CsvNameAttribute))) continue;
 
+                            var value = $"{pi.GetValue(elem)}";
+                            if (pi.IsDefined(typeof(IStringFilter), true))
+                            {
+                                var flt = pi.GetCustomAttributes(typeof(IStringFilter), true)[0] as IStringFilter;
+                                value = flt.Filter(value);
+                            }
+
+                            writer.Write($"{value};");
+                            Console.Write($"{value};");
+                        }
 
                         writer.WriteLine();
                         Console.WriteLine();
@@ -117,6 +143,9 @@ namespace ReflectionAttributes.Attributes {
 
                     writer.Flush();
                     writer.Close();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
                 }
 
                 #endregion

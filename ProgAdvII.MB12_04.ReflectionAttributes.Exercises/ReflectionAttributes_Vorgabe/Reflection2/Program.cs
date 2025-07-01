@@ -21,6 +21,14 @@ namespace Reflection2 {
 
                     // Ignore assemblies we can't load. They could be native, etc...
                     var assembly = Assembly.LoadFile(file);
+                    foreach(Type type in assembly.ExportedTypes)
+                    {
+                        if(typeof(IPlugin).IsAssignableFrom(type))
+                        {
+                            var instance = Activator.CreateInstance(type) as IPlugin;
+                            instance.Execute();
+                        }
+                    }
 
                 } catch (Win32Exception) {
                 } catch (ArgumentException) {

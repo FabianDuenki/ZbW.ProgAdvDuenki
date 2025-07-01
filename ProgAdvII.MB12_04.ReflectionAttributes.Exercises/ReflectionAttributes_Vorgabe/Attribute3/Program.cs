@@ -4,14 +4,17 @@ using System.Diagnostics;
 namespace Attribute3 {
     class Trace {
 
+        [Conditional("tracing")]
         public static void WriteLine(string s) {
             Console.WriteLine(s);
         }
 
+        [Conditional("tracing")]
         public static void WriteLine() {
             Console.WriteLine();
         }
 
+        [Conditional("tracing")]
         public static void Write(string s) {
             Console.Write(s);
         }
