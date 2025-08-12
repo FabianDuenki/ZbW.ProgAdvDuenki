@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="PeterO.Cbor" Version="4.5.5" />
+    </ItemGroup>
+
+    <ItemGroup>
       <None Update="Exercises\2\garageJson.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
