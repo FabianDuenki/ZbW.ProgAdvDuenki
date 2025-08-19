@@ -21,9 +21,9 @@ namespace Shopper {
     }
 
     public class Shopper {
-        private readonly CreditCard creditCard;
+        private readonly ICreditCard creditCard;
 
-        public Shopper(CreditCard creditCard) {
+        public Shopper(ICreditCard creditCard) {
             this.creditCard = creditCard;
         }
 
@@ -33,7 +33,7 @@ namespace Shopper {
         }
     }
 
-    public abstract class CreditCard {
+    public abstract class CreditCard : ICreditCard {
         public readonly ITerminal terminal;
         public CreditCard(ITerminal terminal) {
             this.terminal = terminal;
@@ -69,5 +69,10 @@ namespace Shopper {
     public interface ITerminal
     {
         void Trx();
+    }
+
+    public interface ICreditCard
+    {
+        string Charge();
     }
 }
