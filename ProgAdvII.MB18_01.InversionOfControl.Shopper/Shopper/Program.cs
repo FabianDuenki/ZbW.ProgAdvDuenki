@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,20 +9,21 @@ namespace Shopper {
     class Program {
         static void Main(string[] args) {
             var masterCard = new MasterCard(new EftTerminal());
-            var shopper = new Shopper(masterCard);
+            var shopperMaster = new Shopper(masterCard);
+            shopperMaster.Charge();
 
-            //var visa = new Visa(new EftTerminal());
-            //var shopper = new Shopper(visa);
-            shopper.Charge();
+            var visa = new Visa(new EftTerminal());
+            var shopperVisa = new Shopper(visa);
+            shopperVisa.Charge();
 
             Console.ReadKey();
         }
     }
 
     public class Shopper {
-        private readonly MasterCard creditCard;
+        private readonly CreditCard creditCard;
 
-        public Shopper(MasterCard creditCard) {
+        public Shopper(CreditCard creditCard) {
             this.creditCard = creditCard;
         }
 
@@ -32,8 +34,8 @@ namespace Shopper {
     }
 
     public abstract class CreditCard {
-        public readonly EftTerminal terminal;
-        public CreditCard(EftTerminal terminal) {
+        public readonly ITerminal terminal;
+        public CreditCard(ITerminal terminal) {
             this.terminal = terminal;
         }
         public void TrxTerminal() {
@@ -43,7 +45,7 @@ namespace Shopper {
     }
 
     public class Visa : CreditCard {
-        public Visa(EftTerminal terminal) : base(terminal) { }
+        public Visa(ITerminal terminal) : base(terminal) { }
         public override string Charge() {
             base.TrxTerminal();
             return "Chaaaarging with the Visa!";
@@ -51,16 +53,21 @@ namespace Shopper {
     }
 
     public class MasterCard  : CreditCard {
-        public MasterCard(EftTerminal terminal) : base(terminal) { }
+        public MasterCard(ITerminal terminal) : base(terminal) { }
         public override string Charge() {
             base.TrxTerminal();
             return "Swiping the MasterCard!";
         }
     }
 
-    public class EftTerminal {
+    public class EftTerminal : ITerminal {
         public void Trx() {
             Console.WriteLine("Do Eft-Transaction.");
         }
+    }
+
+    public interface ITerminal
+    {
+        void Trx();
     }
 }
