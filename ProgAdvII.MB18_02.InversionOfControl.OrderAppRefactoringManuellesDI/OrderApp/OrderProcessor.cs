@@ -1,24 +1,34 @@
 ﻿
 using Microsoft.Data.SqlClient;
 using System.Configuration;
+using System.Data.Common;
 
 namespace OrderApp {
     public class OrderProcessor {
-        private readonly EmailNotifier _email = new EmailNotifier();
-        private readonly SmsNotifier _sms = new SmsNotifier();
+        private INotifier _notifier;
+        private OrderRepository _orderRepository;
 
-        private const string ConnString =
-            "Server=.;Database=ShopDb;Trusted_Connection=True;MultipleActiveResultSets=true";
+        public OrderProcessor(INotifier notifier, OrderRepository orderRepository)
+        {
+            this.Notifier = notifier;
+            this._orderRepository = orderRepository;
+        }
 
-        public void Process(Order order, string notifyChannel) {
-            if (order == null || order.Items == null || order.Items.Count == 0)
-                throw new Exception("Order invalid");
+        public INotifier Notifier
+        {
+            get { return _notifier; }
+            set { _notifier = value; }
+        }
+
+        public void Process(Order order) {
+            OrderValidator orderValidator = new OrderValidator();
+            orderValidator.validate(order);
 
             decimal subtotal = 0m;
-            foreach (var it in order.Items) {
-                if (it.Price < 0 || it.Qty <= 0)
+            foreach (var item in order.Items) {
+                if (item.Price < 0 || item.Qty <= 0)
                     throw new Exception("Item invalid");
-                subtotal += it.Price * it.Qty;
+                subtotal += item.Price * item.Qty;
             }
 
             var taxRate = 0.081m;      
@@ -32,32 +42,15 @@ namespace OrderApp {
             order.CreatedAt = DateTime.Now;
             order.Total = total;
 
-            using (var con = new SqlConnection(ConnString)) {
-                con.Open();
-                var cmd = con.CreateCommand();
-                cmd.CommandText =
-                    "INSERT INTO Orders(OrderId, CustomerEmail, Phone, Total, CreatedAt) " +
-                    "VALUES(@id, @email, @phone, @total, @ts)";
-                cmd.Parameters.AddWithValue("@id", order.OrderId);
-                cmd.Parameters.AddWithValue("@email", order.CustomerEmail);
-                cmd.Parameters.AddWithValue("@phone", order.Phone);
-                cmd.Parameters.AddWithValue("@total", order.Total);
-                cmd.Parameters.AddWithValue("@ts", order.CreatedAt);
-                cmd.ExecuteNonQuery();
-            }
+            _orderRepository.Add(order);
 
-            var fromEmail = ConfigurationManager.AppSettings["Mail:From"] ?? "noreply@example.com";
-            var smsSender = ConfigurationManager.AppSettings["Sms:Sender"] ?? "SHOP";
-
-            try {
+            try
+            {
                 var msg = $"Bestellung {order.OrderId} erhalten, Total {order.Total:0.00} CHF";
-                if (notifyChannel == "email")
-                    _email.Send(fromEmail, order.CustomerEmail, "Bestellbestaetigung", msg);
-                else if (notifyChannel == "sms")
-                    _sms.Send(smsSender, order.Phone, msg);
-                else
-                    Console.WriteLine("Kein Versandkanal gewaehlt.");
-            } catch (Exception ex) {
+                this._notifier.Send(order, msg);
+            } 
+            catch (Exception ex) 
+            {
                 Console.WriteLine("Fehler beim Benachrichtigen: " + ex.Message);
             }
         }
@@ -76,14 +69,28 @@ namespace OrderApp {
     public class OrderItem { public string Sku; public int Qty; public decimal Price; }
 
     // Dummy Notifier
-    public class EmailNotifier {
-        public void Send(string from, string to, string subject, string body)
-            => Console.WriteLine($"[EMAIL] {from} -> {to} | {subject} | {body}");
+    public class EmailNotifier : INotifier
+    {
+        public void Send(Order order, string message)
+        {
+            var from = ConfigurationManager.AppSettings["Mail:From"] ?? "noreply@example.com";
+            var to = order.CustomerEmail;
+            var subject = "Bestellbestätigung";
+            Console.WriteLine($"[EMAIL] {from} -> {to} | {subject} | {message}");
+        }
     }
 
-    public class SmsNotifier {
-        public void Send(string from, string to, string body)
-            => Console.WriteLine($"[SMS] {from} -> {to} | {body}");
+    public class SmsNotifier : INotifier {
+        public void Send(Order order, string message)
+        {
+            var from = ConfigurationManager.AppSettings["Sms:Sender"] ?? "SHOP";
+            var to = order.Phone;
+            Console.WriteLine($"[SMS] {from} -> {to} | {message}");
+        }
     }
 
+    public interface INotifier
+    {
+        public void Send(Order order, string message);
+    }
 }
