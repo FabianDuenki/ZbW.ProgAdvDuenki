@@ -15,7 +15,6 @@ namespace PasswordDemo {
                 Console.WriteLine("1) Login");
                 Console.WriteLine("2) Register");
                 Console.WriteLine("3) Simuliere Datenleck");
-                Console.WriteLine("4) Zeige alle User (Admin-Fehler) – UNSICHER");
                 Console.WriteLine("0) Exit");
                 Console.Write("Auswahl: ");
 
@@ -66,14 +65,6 @@ namespace PasswordDemo {
                             Console.WriteLine("-------------------------------------------");
                             break;
                         }
-                    case "4": {
-                            // „Admin-Fehlbedienung“: unnoetige Einsicht auf Passwoerter
-                            Console.WriteLine("Alle User (inkl. Passwoerter – UNSICHER):");
-                            foreach (var u in store.GetAll()) {
-                                Console.WriteLine(u.ToString());
-                            }
-                            break;
-                        }
                     default: {
                             Console.WriteLine("Unbekannte Auswahl.");
                             break;
@@ -99,7 +90,6 @@ namespace PasswordDemo {
                     }
                     continue;
                 }
-                // Keine Filter – V1
                 pwd += key.KeyChar;
                 Console.Write("*");
             }
