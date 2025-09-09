@@ -26,7 +26,7 @@
                 return false;
             }
 
-            return user.Password == password;
+            return user.VerifyPassword(password);
         }
     }
 }
